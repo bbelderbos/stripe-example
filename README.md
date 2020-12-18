@@ -21,3 +21,7 @@ Steps I had to do to get it working on Heroku:
 5. Define what kicks off the Flask app: `echo "web: gunicorn server.server:app" > Procfile`
 
 6. Deploy: `git push heroku master`
+
+## Customize it
+
+You can customize the front-end by editing `client/index.html` and `client/css/global.css`.

@@ -20,7 +20,7 @@ Steps I had to do to get it working on Heroku:
 
 5. Define what kicks off the Flask app: `echo "web: gunicorn server.server:app" > Procfile`
 
-6. Deploy: `git push heroku master`
+6. Deploy: `git push heroku master` > result: [https://stripe-example-bob.herokuapp.com/](https://stripe-example-bob.herokuapp.com/) (if it takes a bit to load that's because I am using a free Heroku dyno).
 
 ## Customize it
 

@@ -58,8 +58,6 @@ def get_checkout_session():
 def create_checkout_session():
     data = json.loads(request.data)
     domain_url = os.getenv('DOMAIN')
-    print(f"data = {data}")
-    print(f"domain_url = {domain_url}")
 
     try:
         # Create new Checkout Session for the order
@@ -86,7 +84,6 @@ def create_checkout_session():
         )
         return jsonify({'sessionId': checkout_session['id']})
     except Exception as e:
-        print(f"EXCEPTION create_checkout_session: {str(e)}")
         return jsonify(error=str(e)), 403
 
 

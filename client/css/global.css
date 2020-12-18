@@ -265,7 +265,7 @@ input[type="number"]::placeholder {
 
 /* Buttons and links */
 button {
-  background: var(--accent-color);
+  background: #43ac6a;
   border-radius: var(--radius);
   color: white;
   border: 0;
